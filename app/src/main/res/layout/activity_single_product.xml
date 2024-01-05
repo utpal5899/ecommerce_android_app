@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:overScrollMode="never"
+        android:scrollbars="vertical"
+
+        tools:layout_editor_absoluteX="-16dp"
+        tools:layout_editor_absoluteY="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                app:cardBackgroundColor="@color/white"
+                app:cardCornerRadius="5dp">
+
+
+                <ImageView
+                    android:id="@+id/header_image"
+                    android:layout_width="93dp"
+                    android:layout_height="66dp"
+
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.048"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.0"
+                    app:srcCompat="@drawable/amazonheader" />
+
+                <TextView
+                    android:id="@+id/header_heading"
+                    android:layout_width="95dp"
+                    android:layout_height="31dp"
+                    android:layout_marginLeft="1in"
+                    android:layout_marginTop="20dp"
+                    android:text="@string/app_name"
+                    android:textColor="#1e3932"
+                    android:textSize="24dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.032" />
+
+
+
+                <ImageView
+                    android:id="@+id/header_cart"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="300dp"
+                    android:layout_marginTop="15dp"
+                    android:src="@drawable/baseline_add_shopping_cart_24" />
+
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="682dp"
+                android:layout_margin="15dp"
+                app:cardBackgroundColor="@color/white"
+                app:cardCornerRadius="5dp">
+
+
+                <ImageView
+                    android:id="@+id/single_product"
+                    android:layout_width="wrap_content"
+                    android:layout_height="191dp"
+
+                    android:layout_marginTop="70dp"
+                    android:contentDescription="@null"
+                    app:srcCompat="@drawable/amazonlogo" />
+
+                <TextView
+                    android:id="@+id/single_product_name"
+                    android:layout_width="370dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="15dp"
+                    android:text="boAt Airdopes 131 PRO with 11mm Drivers,45Hrs Playback,ASAP Charge"
+                    android:textColor="@color/black" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+
+                    <TextView
+                        android:id="@+id/sign"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="270dp"
+                        android:text="$"
+                        android:textColor="@color/black"
+                        android:textSize="28sp" />
+
+                    <TextView
+                        android:id="@+id/single_product_price"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="270dp"
+                        android:text="99"
+                        android:textColor="@color/black"
+                        android:textSize="28sp" />
+
+                    <TextView
+                        android:id="@+id/textView11"
+                        android:layout_width="60dp"
+                        android:layout_height="14dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="270dp"
+                        android:background="#29652E"
+                        android:text="40% OFF"
+                        android:textAlignment="center"
+
+                        android:textColor="@color/white"
+                        android:textSize="10sp" />
+
+                </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/textView101"
+                            android:layout_width="51dp"
+                            android:layout_height="42dp"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginTop="20dp"
+                              android:textColor="@color/black"
+                            android:text="Qty: "
+
+                            android:textSize="20sp" />
+
+                        <Button
+                            android:id="@+id/minus"
+                            android:layout_width="39dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="20dp"
+                            android:text="-"
+                            android:textSize="16sp"
+                            android:backgroundTint="#EDE9E9"
+                            android:textColor="#000000"
+                            />
+
+
+                        <TextView
+                            android:id="@+id/qny_num"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="8dp"
+                            android:layout_marginTop="22dp"
+                            android:text="1"
+                            android:textColor="@color/black"
+                            android:textSize="28sp" />
+
+                        <Button
+                            android:id="@+id/plus"
+                            android:layout_width="39dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="20dp"
+                            android:text="+"
+                            android:backgroundTint="#EDE9E9"
+
+                            android:textColor="#000000"
+                            android:textSize="16sp" />
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+
+
+
+
+
+                <TextView
+                    android:id="@+id/textView14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="500dp"
+                    android:text="Specifications"
+                    android:textColor="#3E3E3E"
+                    android:textSize="18sp" />
+
+
+                <TextView
+                    android:id="@+id/single_product_discription"
+                    android:layout_width="309dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="530dp"
+                    android:text=" It is IPX6 rated for resistance against water and sweat to provide a carefree listening experience.
+                                     TWS Airdopes 131 offers true wireless experience with the latest Bluetooth v5.0. "
+                    android:textColor="#707070"
+                    android:textSize="16sp" />
+
+
+                <Button
+                    android:id="@+id/add_cart"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="430dp"
+                    android:layout_marginRight="15dp"
+                    android:backgroundTint="#EDE9E9"
+                    android:text="Add to cart"
+                    android:textColor="#000000"
+                    app:cornerRadius="15dp" />
+
+                <Button
+                    android:id="@+id/buy_product_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="380dp"
+                    android:layout_marginRight="15dp"
+                    android:backgroundTint="#A32600"
+                    android:text="Buy Now"
+                    android:textColor="@color/white"
+                    app:cornerRadius="15dp" />
+
+
+            </androidx.cardview.widget.CardView>
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+</RelativeLayout>

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".thankyou_page"
+    android:background="@color/white"
+     >
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="5dp"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="5dp">
+
+
+        <ImageView
+            android:id="@+id/header_image"
+            android:layout_width="93dp"
+            android:layout_height="66dp"
+
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.048"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0"
+            app:srcCompat="@drawable/amazonheader" />
+
+        <TextView
+            android:id="@+id/header_heading"
+            android:layout_width="95dp"
+            android:layout_height="31dp"
+            android:layout_marginLeft="1in"
+            android:layout_marginTop="20dp"
+            android:text="@string/app_name"
+            android:textColor="#1e3932"
+            android:textSize="24dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.032" />
+
+
+    </androidx.cardview.widget.CardView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+    <ImageView
+        android:layout_marginTop="100dp"
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        android:textAlignment="center"
+        android:src="@drawable/amazonlogo"/>
+
+    <TextView
+        android:layout_marginTop="30dp"
+        android:paddingTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:elevation="20dp"
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="76dp"
+        android:textColor="@color/purple_700"
+        android:background="@color/white"
+
+        android:textAlignment="center"
+        android:text="Thankyou for shopping"
+        android:textSize="30dp" />
+
+
+    <Button
+        android:id="@+id/home_page_btn"
+        android:layout_width="300dp"
+        android:layout_height="70dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="15dp"
+        android:backgroundTint="#EDE9E9"
+        android:text="Return to homepage"
+        android:textColor="#000000"
+        app:cornerRadius="15dp" />
+
+    </LinearLayout>
+</RelativeLayout>

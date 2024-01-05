@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "472786758253",
+    "project_id": "utpal-tank-final-project",
+    "storage_bucket": "utpal-tank-final-project.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:472786758253:android:4dc019d2305acfedfaad64",
+        "android_client_info": {
+          "package_name": "com.example.utpal_tank_final_project"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "472786758253-o4u3jekpkihr0n5t03pmbub6edh4s0ot.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBbDAa4UvUE2sBHDhCTssTjNo0PpCMzbu8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "472786758253-o4u3jekpkihr0n5t03pmbub6edh4s0ot.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".add_product">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#f1f3f6"
+        android:overScrollMode="never"
+        android:scrollbars="vertical"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:layout_editor_absoluteX="0dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                app:cardBackgroundColor="@color/white"
+                app:cardCornerRadius="5dp">
+
+
+                <ImageView
+                    android:id="@+id/header_image"
+                    android:layout_width="93dp"
+                    android:layout_height="66dp"
+
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.048"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.0"
+                    app:srcCompat="@drawable/amazonheader" />
+
+                <TextView
+                    android:id="@+id/header_heading"
+                    android:layout_width="95dp"
+                    android:layout_height="31dp"
+                    android:layout_marginLeft="2in"
+                    android:layout_marginTop="20dp"
+                    android:text="@string/app_name"
+                    android:textColor="#1e3932"
+                    android:textSize="24dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.032" />
+
+
+            </androidx.cardview.widget.CardView>
+
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="500dp"
+                android:layout_height="76dp"
+                android:layout_marginLeft="120dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@color/white"
+                android:elevation="20dp"
+                android:paddingTop="20dp"
+                android:text="Upload New Product"
+
+                android:textAlignment="center"
+                android:textColor="@color/purple_700"
+                android:textSize="30dp" />
+
+
+            <EditText
+
+                android:id="@+id/product_name"
+                android:layout_width="382dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="170dp"
+                android:layout_marginTop="60dp"
+                android:layout_marginBottom="15dp"
+                android:backgroundTint="@color/gray"
+                android:ems="10"
+                android:hint="Product Name"
+                android:inputType="textPersonName"
+                android:outlineSpotShadowColor="#700545"
+                android:textColor="@color/gray"
+                android:textColorHint="@color/gray"
+                android:textSize="26sp" />
+
+            <EditText
+
+                android:id="@+id/product_price"
+                android:layout_width="380dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="170dp"
+                android:layout_marginBottom="15dp"
+                android:backgroundTint="@color/gray"
+                android:ems="10"
+                android:hint="price"
+
+                android:inputType="text"
+                android:outlineSpotShadowColor="#700545"
+                android:textColor="@color/gray"
+                android:textColorHint="@color/gray"
+                android:textSize="26sp" />
+
+
+            <androidx.core.widget.NestedScrollView
+                android:layout_width="match_parent"
+                android:layout_height="100dp">
+
+                <EditText
+                    android:textSize="26sp"
+                    android:id="@+id/product_description"
+                    android:layout_width="380dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="170dp"
+                    android:layout_marginBottom="15dp"
+                    android:backgroundTint="@color/gray"
+                    android:ems="10"
+                    android:hint="describe about it"
+                    android:inputType="text|textMultiLine"
+                    android:lineSpacingExtra="5sp"
+                    android:padding="15dp"
+                    android:textColor="@color/gray"
+                    android:textColorHint="@color/gray"
+                    android:typeface="normal" />
+
+            </androidx.core.widget.NestedScrollView>
+
+
+            <TextView
+                android:id="@+id/tvRegister"
+                android:layout_width="wrap_content"
+                android:layout_height="51dp"
+                android:layout_marginLeft="240dp"
+                android:layout_marginTop="10dp"
+                android:text="upload product image"
+                android:textColor="@color/gray"
+                android:textSize="22sp" />
+
+            <ImageView
+                android:id="@+id/upload_image"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="80dp"
+                android:src="@drawable/amazonheader" />
+
+            <RelativeLayout
+                android:id="@+id/relative"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:visibility="gone">
+
+                <ImageView
+                    android:id="@+id/product_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp" />
+
+            </RelativeLayout>
+
+
+            <Button
+                android:id="@+id/product_upload_btn"
+                android:layout_width="400dp"
+                android:layout_height="75dp"
+                android:layout_marginTop="20dp"
+                android:backgroundTint="@color/purple_200"
+                android:text="Add Product"
+                android:textSize="18sp"
+                android:layout_marginLeft="160dp"
+
+
+                />
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+</LinearLayout>
+
+
+
+
+
+
+
